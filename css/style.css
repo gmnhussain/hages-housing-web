@@ -422,7 +422,7 @@ p {
   width: 56%;
   display: flex;
   justify-content: center;
-  margin: calc(0.5em + 8.33vw) auto;
+  margin: calc(0.5em + 6.33vw) auto;
   margin-bottom: 0;
 }
 .intro-textbox-logo svg {
@@ -448,14 +448,12 @@ p {
 }
 .intro-textbox-text p {
   margin: 0;
-  font-family: "Electra", serif;
-  font-size: 1.25em;
-  font-family: "MartelSans";
+  font-family: "Exo", serif;
   font-weight: 400;
-  font-size: calc(0.9em + 1vw);
+  font-size: calc(0.75em + 1vw);
 }
 .intro-bg .intro-textbox .intro-textbox-text {
-  margin: 3.125em 1.25em 4.125em;
+  margin: 2.225em 1.25em 4.125em;
 }
 @media screen and (max-width: 414px) {
   .intro-bg .intro-textbox .intro-textbox-text {
@@ -557,13 +555,13 @@ p {
 /* download-btn */
 a.download-btn {
   background-color: #d0cdcd;
-  padding: 0 1.75em;
+  padding: 0 1.7em;
   text-align: center;
   text-transform: uppercase;
   font-family: "MartelSans";
-  font-size: 0.75em;
-  line-height: 3.55em;
-  letter-spacing: 0;
+  font-size: 0.6em;
+  line-height: 3.95em;
+  letter-spacing: 1px;
   margin-bottom: 1.125em;
   color: #000;
   display: inline-block;
@@ -585,9 +583,9 @@ a.download-btn {
   }
   a.download-btn {
     padding: 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 4.5em;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     margin: 3.125em auto 0;
     background-color: #dedede;
     display: block;
