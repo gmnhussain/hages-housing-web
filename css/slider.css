@@ -350,7 +350,7 @@
 }
 
 .primary-slide-content-number {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .primary-slide-content-header {
@@ -963,4 +963,8 @@
 }
 .primary-modal-close-btn::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.primary-slide-content-with-link .primary-slide-content-lower-text {
+  height: 58%;
 }

@@ -422,7 +422,8 @@ p {
   width: 56%;
   display: flex;
   justify-content: center;
-  margin: calc(0.5em + 8.33vw);
+  margin: calc(0.5em + 8.33vw) auto;
+  margin-bottom: 0;
 }
 .intro-textbox-logo svg {
   /* max-width: 350px; */
@@ -432,6 +433,7 @@ p {
     margin-bottom: 1.625em;
     margin-top: 0;
     width: 74%;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -444,22 +446,24 @@ p {
   line-height: 1.5em;
   text-align: center;
 }
-.intro-textbox-text .cursive {
+.intro-textbox-text p {
   margin: 0;
   font-family: "Electra", serif;
   font-size: 1.25em;
-  font-style: italic;
+  font-family: "MartelSans";
+  font-weight: 400;
+  font-size: calc(0.9em + 1vw);
 }
 .intro-bg .intro-textbox .intro-textbox-text {
-  margin: 3.125em 1.25em;
+  margin: 3.125em 1.25em 4.125em;
 }
 @media screen and (max-width: 414px) {
   .intro-bg .intro-textbox .intro-textbox-text {
-    margin: 3.125em 1.25em;
+    margin: 2.15em 1.25em 3.15em;
   }
 }
 .intro-bg .intro-textbox .intro-textbox-button .text {
-  margin: 0.8em 0;
+  margin: 0.65em 0;
   letter-spacing: 0.25em;
   font-family: "SyntaxRoman";
   font-family: "MartelSans";
@@ -550,6 +554,21 @@ p {
   font-weight: bold;
 }
 
+/* download-btn */
+a.download-btn {
+  background-color: #d0cdcd;
+  padding: 0 1.75em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "MartelSans";
+  font-size: 0.75em;
+  line-height: 3.55em;
+  letter-spacing: 0;
+  margin-bottom: 1.125em;
+  color: #000;
+  display: inline-block;
+}
+
 .view-on-mobile {
   display: none;
 }
@@ -563,5 +582,15 @@ p {
   }
   .view-on-desktop {
     display: none;
+  }
+  a.download-btn {
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 4.5em;
+    letter-spacing: 0;
+    margin: 3.125em auto 0;
+    background-color: #dedede;
+    display: block;
+    max-width: 220px;
   }
 }

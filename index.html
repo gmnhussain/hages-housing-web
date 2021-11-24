@@ -44,11 +44,11 @@
           <img src="images/icons/intro-calligraphy.svg" alt="">
         </div> -->
         <div class="intro-textbox-logo">
-          <img src="images/logo/Housing-logo.png"/>
+          <img src="images/logo/Housing-logo.png" />
         </div>
-        <!-- <div class="intro-textbox-text">
-          <p class="cursive">Re-envisioned by<br> Robert A.M. Stern Architects</p>
-        </div> -->
+        <div class="intro-textbox-text">
+          <p>Book now from DKK 499</p>
+        </div>
         <button class="intro-textbox-button border-button">
           <div class="line top"></div>
           <div class="text">ENTER SITE</div>
@@ -148,7 +148,7 @@
                 <img type="image/jpeg" src="images/slider/02.jpg" data-swiper-parallax="-100" data-swiper-parallax-opacity="0" title="slide2" />
               </picture>
             </div>
-            <div class="primary-slide-content">
+            <div class="primary-slide-content primary-slide-content-with-link">
               <div class="primary-slide-content-upper">
                 <div class="primary-slide-content-number">THE HOUSING</div>
                 <div class="primary-slide-content-header header-text">PRIVACY &<br>RELAXATION</div>
@@ -156,6 +156,8 @@
               <div class="primary-slide-content-lower-text">
                 <div class="primary-slide-paragraph-text">
                   <p>72 cabins divided into 144 rooms (23m2 per room)</p>
+
+                  <a class="download-btn" href="pdf/floorplan.pdf" download>Download Floorplan</a>
 
                   <p>All rooms with private bathroom, kitchenette, TV and lounge area.</p>
 
@@ -263,7 +265,7 @@
 
             <p class="mb-0">We can meet all the needs you might have in terms of accommodation and the rules and regulations for housing to fehmern construction, for example:</p>
             <p class="mb-0"> </p>
-            
+
             <ul>
               <li>Housing with fixed rates for longer periods.</li>
               <li>Shorter stays, company agreements with fixed rates (for shorter/longer projects)</li>
@@ -308,6 +310,8 @@
             <p class="mb-0 mt-10"><b>The housing also includes</b></p>
 
             <p>Access to garden/courtyard – Bed linen / Towels included – Cleaning included – Close to ammenities – Coffee maker – Dryer – Fully equipped kitchen – Furnished – Parking space – TV – Washing machine – Wi-fi (free access)</p>
+
+            <a class="download-btn" href="pdf/floorplan.pdf" download>Download Floorplan</a>
           </div>
         </div>
       </div>
@@ -370,7 +374,7 @@
   <script src="js/script.js"></script>
 
   <script>
-    $(".email-send-btn").click(function(event){
+    $(".email-send-btn").click(function(event) {
       event.preventDefault();
       let name = $("input[name=name]").val();
       let email = $("input[name=email]").val();
@@ -392,14 +396,14 @@
     });
 
     function sendEmail(name, email, message) {
-      if (name != "" && email !="" && message !="") {
+      if (name != "" && email != "" && message != "") {
         $.ajax({
           url: "mail.php",
-          type:"POST",
-          data:{
-            name:name,
-            email:email,
-            message:message,
+          type: "POST",
+          data: {
+            name: name,
+            email: email,
+            message: message,
             receiverEmail: 'muhammad.tamzid@gmail.com',
             receiverName: 'Hages Housing',
             subject: 'Hages Housing website contact mail',
